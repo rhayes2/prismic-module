@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  color: #003c3c;
+  background: #ffffff;
+  font-size: 16px;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+section {
+  padding: 1.25rem;
+  max-width: 800px;
+}
+
+.prose {
+  text-align: left;
+}
+
+.prose p,
+.prose h1 {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.prose a:not(.button) {
+  text-decoration: none;
+  color: #5163ba;
+}
+
+.prose a:not(.button):hover {
+  text-decoration: underline;
+}
+
+.prose code {
+  font-family: "DM Mono", monospace;
+}
+
+.button {
+  color: #ffffff;
+  background: #5163ba;
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 900px) {
+}
