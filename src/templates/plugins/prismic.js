@@ -38,6 +38,14 @@ export default async (context, inject) => {
       }
     },
     methods: {
+      async refresh(){
+        try {
+          api = await Prismic.api('<%= options.endpoint %>', Object.assign({}, options,  <%= JSON.stringify(options.apiOptions) %>))
+        } catch (error) {
+          console.error(error)
+          console.error("Failed to init Prismic API, preventing app fatal error.")
+        }
+      },
       asHtml(richText) {
         if (richText) {
           return PrismicDOM.RichText.asHtml(
